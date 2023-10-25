@@ -1,0 +1,15 @@
+{
+    "name": "coffee-shop",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "npx tailwindcss -i ./src/input.css -o ./public/styles/app.css --watch"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "tailwindcss": "^3.3.3"
+    }
+}
