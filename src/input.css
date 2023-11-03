@@ -35,10 +35,6 @@
         src: local("Morabba DemiBold"), url("../fonts/Morabba/woff2/Morabba-Bold.woff2") format("woff2");
         font-display: swap;
     }
-    body {
-        background-image: url("../images/headerBgDesktop.webp");
-        background-repeat: no-repeat;
-    }
 }
 
 @layer components {
@@ -63,5 +59,20 @@
     }
     .overlay--visible {
         @apply visible opacity-100;
+    }
+    .circle {
+        @apply flex justify-center items-center border border-white/25 rounded-full;
+    }
+    .circle--main {
+        @apply absolute left-0 right-0 bottom-0 mx-auto translate-y-2/4;
+    }
+    .circle--lg {
+        @apply w-[203px] h-[203px] border-white/25;
+    }
+    .circle--md {
+        @apply w-[145px] h-[145px] border-white/50;
+    }
+    .circle--sm {
+        @apply w-[95px] h-[95px] border-white/80;
     }
 }

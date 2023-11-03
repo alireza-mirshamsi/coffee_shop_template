@@ -38,9 +38,14 @@ module.exports = {
                     DEFAULT: "1rem",
                     lg: "0.625rem"
                 }
+            },
+            backgroundImage: {
+                "home-mobile": "url(../images/headerBgMobile.webp)",
+                "home-desktop": "url(../images/headerBgDesktop.webp)"
             }
         },
         screens: {
+            'xs': '480px',
             'sm': '640px',
             'md': '768px',
             'lg': '1024px',
