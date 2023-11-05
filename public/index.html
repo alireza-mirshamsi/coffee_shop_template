@@ -123,7 +123,10 @@
             xmlns="http://www.w3.org/2000/svg">
             <path d="M50 0C69 0 81 22 100 22L0 22C18.75 22 31 0 50 0Z" />
         </symbol>
-
+        <symbol id="chevron-down-mini" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+        </symbol>
     </svg>
     <!-- App header -->
     <header
@@ -458,8 +461,8 @@
             class="home relative h-[200px] xs:h-auto xs:aspect-[2/1] md:aspect-auto bg-home-mobile md:bg-home-desktop bg-no-repeat bg-cover bg-[center_top]">
             <div class="container relative overflow-y-hidden h-full md:min-h-screen flex justify-end items-center">
                 <div class="text-white">
-                    <h2 class="font-MorabbaBold text-2xl md:text-6xl mb-0.5 md:mb-2">قهوه عربیکا لاتزانیا</h2>
-                    <span class="font-MorabbaLight text-xl md:text-5xl"> یک فنجان بالانس! </span>
+                    <h2 class="font-MorabbaBold text-2xl md:text-6xl/[62px] mb-0.5 md:mb-2">قهوه عربیکا لاتزانیا</h2>
+                    <span class="font-MorabbaLight text-xl md:text-5xl/[64px]"> یک فنجان بالانس! </span>
                     <span class="block w-[100px] h-px md:h-0.5 bg-orange-300 my-300 md:my-8"></span>
                     <p class="max-w-[201px] md:max-w-[460px] text-xs md:text-2xl">قطعا نام آشنای عربیکا را شنیده اید،
                         عربیکا یکی از گونه های قهوه است که در نواحی مختلف کمربند قهوه کشت میشود.</p>
@@ -473,17 +476,19 @@
             </div>
 
             <!-- Curve -->
-            <svg class="absolute text-gray-100 bottom-0 right-0 left-0 mx-auto dark:text-zinc-800 w-[100px] h-[22px]">
+            <svg
+                class="absolute text-gray-100 bottom-0 right-0 left-0 mx-auto hidden md:flex dark:text-zinc-800 w-[100px] h-[22px]">
                 <use href="#curve"></use>
             </svg>
             <!-- Arrow Circle -->
             <div
-                class="absolute left-0 right-0 bottom-0 mx-auto w-[30px] h-[30px] translate-y-2/4 flex justify-center items-center border-2 border-orange-300 rounded-full">
-                <svg class="w-4 h-4 text-zinc-700 dark:text-white">
-                    <use href="#chevron-down"></use>
+                class="absolute left-0 right-0 bottom-0 mx-auto hidden md:flex w-[30px] h-[30px] translate-y-2/4 flex justify-center items-center border-2 border-orange-300 rounded-full">
+                <svg class="w-5 h-5 text-zinc-700 dark:text-white">
+                    <use href="#chevron-down-mini"></use>
                 </svg>
             </div>
         </section>
+        <section class="products"></section>
     </main>
 
 
