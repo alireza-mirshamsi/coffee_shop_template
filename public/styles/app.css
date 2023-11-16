@@ -700,6 +700,31 @@ video {
   }
 }
 
+.section-title {
+  font-family: Morabba Meduim;
+  --tw-text-opacity: 1;
+  color: rgb(63 63 70 / var(--tw-text-opacity));
+}
+
+.section-subtitle {
+  display: inline-block;
+  font-family: Morabba Light;
+  --tw-text-opacity: 1;
+  color: rgb(63 63 70 / var(--tw-text-opacity));
+}
+
+.section-link {
+  display: flex;
+  height: 2.5rem;
+  align-items: center;
+  border-radius: 0.375rem;
+  padding-right: 0.75rem;
+  padding-left: 0.25rem;
+  letter-spacing: -0.065em;
+  --tw-text-opacity: 1;
+  color: rgb(253 186 116 / var(--tw-text-opacity));
+}
+
 .invisible {
   visibility: hidden;
 }
@@ -1274,6 +1299,10 @@ video {
   padding-top: 0.75rem;
 }
 
+.pt-48 {
+  padding-top: 12rem;
+}
+
 .font-Dana {
   font-family: Dana;
 }
@@ -1298,6 +1327,11 @@ video {
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-sm {
@@ -1393,6 +1427,10 @@ video {
 
 .delay-75 {
   transition-delay: 75ms;
+}
+
+.hover\:bg-orange-300\/20:hover {
+  background-color: rgb(253 186 116 / 0.2);
 }
 
 .hover\:bg-teal-700:hover {
@@ -1517,6 +1555,18 @@ video {
     margin-bottom: 0.5rem;
   }
 
+  .md\:mt-1 {
+    margin-top: 0.25rem;
+  }
+
+  .md\:mt-1\.5 {
+    margin-top: 0.375rem;
+  }
+
+  .md\:inline-block {
+    display: inline-block;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -1545,6 +1595,11 @@ video {
     max-width: 460px;
   }
 
+  .md\:gap-x-1 {
+    -moz-column-gap: 0.25rem;
+         column-gap: 0.25rem;
+  }
+
   .md\:bg-home-desktop {
     background-image: url(../images/headerBgDesktop.webp);
   }
@@ -1552,6 +1607,16 @@ video {
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .md\:text-5xl\/\[64px\] {
@@ -1562,6 +1627,11 @@ video {
   .md\:text-6xl\/\[62px\] {
     font-size: 3.75rem;
     line-height: 62px;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
