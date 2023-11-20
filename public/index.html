@@ -17,7 +17,7 @@
     </script>
 </head>
 
-<body class="font-Dana bg-gray-100 dark:bg-zinc-800 h-[2000px]">
+<body class="font-Dana bg-gray-100 dark:bg-zinc-800">
     <!-- All App icon -->
     <svg class="hidden">
         <symbol id="shopping-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -495,10 +495,11 @@
         </section>
         <section class="products pt-8 md:pt-10 lg:pt-48">
             <div class="container">
-                <div class="flex items-end justify-between  ">
+                <!-- Section head -->
+                <div class="flex items-end justify-between mb-5 md:mb-12">
                     <div>
                         <h2 class="section-title  text-2xl md:text-5xl dark:text-white"> جدیدترین محصولات </h2>
-                        <span class="section-subtitle text-lg md:text-3xl dark:text-white">فرآوردی شده از دانه قهوه
+                        <span class="section-subtitle text-lg md:text-3xl dark:text-white">فرآوری شده از دانه قهوه
                         </span>
                     </div>
                     <a href="#"
@@ -510,13 +511,43 @@
                         </svg>
                     </a>
                 </div>
+                <!-- section body -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 md:gap-5">
+                    <div class="p-5 bg-white rounded-2xl dark:bg-zinc-700 shadow-normal">
+                        <div class="relative mb-2 md:mb-4">
+                            <img src="images/products/p1.png" class="w-32 mx-auto md:w-auto" alt="">
+                            <span
+                                class="absolute top-1.5 right-1.5 block h-5 h-[30px] text-xs/[24px] md:text-base/[34px] bg-orange-300 font-DanaDemiBold dark:text-zinc-700 px-2 md:px-3.5 rounded-full">12%</span>
+                        </div>
+                        <h5 class="font-DanaMedium text-sm md:text-xl text-zinc-700 dark:text-white line-clamp-2">قهوه
+                            ترک مانتو مقدار 250 گرم خط دوم اسم طولانی</h5>
+                        <div class="flex gap-x-2 md:gap-x-2.5 mt-1.5 md:mt-2.5">
+                            <div class="text-teal-600 dark:text-emereld-500">
+                                <span class="font-DanaDemiBold text-base md:text-xl">154,000</span>
+                                <span class="text-xs md:text-sm tracking-tightest">تومان</span>
+                            </div>
+                            <div class="offer text-gray-400">
+                                <span class="text-xs md:text-xl">175,000</span>
+                                <span class="hidden xl:inline text-sm tracking-tightest">تومان</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 md:p-5 bg-white rounded-2xl dark:bg-zinc-700 shadow-normal "></div>
+                    <div class="p-2 md:p-5 bg-white rounded-2xl dark:bg-zinc-700 shadow-normal "></div>
+                    <div class="p-2 md:p-5 bg-white rounded-2xl dark:bg-zinc-700 shadow-normal "></div>
+                    <div class="p-2 md:p-5 bg-white rounded-2xl dark:bg-zinc-700 shadow-normal "></div>
+                    <div class="p-2 md:p-5 bg-white rounded-2xl dark:bg-zinc-700 shadow-normal "></div>
+                    <div class="p-2 md:p-5 bg-white rounded-2xl dark:bg-zinc-700 shadow-normal "></div>
+                    <div class="p-2 md:p-5 bg-white rounded-2xl dark:bg-zinc-700 shadow-normal "></div>
+                </div>
             </div>
         </section>
     </main>
 
-    <div class=" hidden overlay invisible opacity-0 md:hidden fixed inset-0 w-full bg-black/40 z-10 transition-all ">
+    <div class=" hidden overlay invisible opacity-0 md:hidden fixed inset-0 w-full bg-black/40 z-10 transition-all
+                            child:rounded-2xl ">
     </div>
-    <script src="scripts/app.js"></script>
+    <script src=" scripts/app.js "></script>
 </body>
 
 </html>

@@ -23,7 +23,7 @@ module.exports = {
                 "DanaMedium": "Dana Medium",
                 "DanaDemiBold": "Dana DemiBold",
                 "Morabba": "Morabba Light",
-                "MorabbaMeduim": "Morabba Meduim",
+                "MorabbaMedium": "Morabba Medium",
                 "MorabbaBold": "Morabba Bold"
             },
             letterSpacing: {
