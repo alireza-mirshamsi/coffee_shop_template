@@ -108,4 +108,20 @@
         background-color: #EF4444;
         top: -2px;
     }
+    .category-banner__item1 {
+        background: linear-gradient(270deg, rgba(0, 0, 0, 0.65) 33.85%, rgba(243, 244, 246, 0.1) 100%), url("../images/categories/category-right.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .category-banner__item2 {
+        background: linear-gradient(270deg, rgba(0, 0, 0, 0.6) 33.85%, rgba(243, 244, 246, 0.1) 100%), url("../images/categories/category-left.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@layer utilities {
+    .flex-center {
+        @apply flex items-center justify-center
+    }
 }
