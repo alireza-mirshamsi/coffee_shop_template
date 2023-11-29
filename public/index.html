@@ -8,6 +8,7 @@
     <title>coffee shop</title>
     <link rel="stylesheet" href="styles/app.css">
     <link rel="shortcut icon" href="images/fav-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css">
     <script type="text/javascript">
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark')
@@ -766,29 +767,42 @@
                         <span class="section-subtitle text-lg md:text-3xl dark:text-white"> پیشنهاد قهوه خورها ...
                         </span>
                     </div>
-                    <div class="flex">
+                    <div class="flex gap-x-3 gap-x-[18px]">
                         <div
-                            class="flex-center w-9 h-9 md:w-10 md:h-10 bg-white dark:bg-zinc-700 text-zinc-700 dark:text-white shadow-normal rounded-full">
+                            class="swiper-button-prev-custom flex-center w-9 h-9 md:w-10 md:h-10 bg-white dark:bg-zinc-700 text-zinc-700 dark:text-white shadow-normal rounded-full hover:bg-gray-300 dark:hover:bg-white dark:hover:text-zinc-700 cursor-pointer transition-all">
                             <svg class="w-5 h-5 md:w-[26px] md:h-[26px] rotate-180">
                                 <use href="#chevron-left-mini"></use>
                             </svg>
                         </div>
                         <div
-                            class="flex-center w-9 h-9 md:w-10 md:h-10 bg-white dark:bg-zinc-700 text-zinc-700 dark:text-white shadow-normal rounded-full">
+                            class="swiper-button-next flex-center w-9 h-9 md:w-10 md:h-10 bg-white dark:bg-zinc-700 text-zinc-700 dark:text-white shadow-normal rounded-full hover:bg-gray-300 dark:hover:bg-white dark:hover:text-zinc-700 cursor-pointer transition-all">
                             <svg class="w-5 h-5 md:w-[26px] md:h-[26px]">
                                 <use href="#chevron-left-mini"></use>
                             </svg>
                         </div>
                     </div>
                 </div>
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        ...
+                    </div>
+
+                </div>
             </div>
         </section>
     </main>
 
-    <div class=" hidden overlay invisible opacity-0 md:hidden fixed inset-0 w-full bg-black/40 z-10 transition-all
-                    child:rounded-2xl ">
+    <div
+        class=" hidden overlay invisible opacity-0 md:hidden fixed inset-0 w-full bg-black/40 z-10 transition-all child:rounded-2xl">
     </div>
-    <script src=" scripts/app.js "></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/swiper-bundle.min.js"></script>
 </body>
 
 </html>
