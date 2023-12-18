@@ -118,6 +118,36 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
+    .services {
+        @apply relative;
+    }
+    .services::after,
+    .services::before {
+        content: "";
+        display: block;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        background-color: #D1D5D8;
+    }
+    @media screen and (min-width:480px) {
+        .services::after,
+        .services::before {
+            content: none;
+        }
+    }
+    html.dark .services::after,
+    html.dark .services::before {
+        background-color: rgba(255, 255, 255, 0.1)
+    }
+    .services::after {
+        width: 1px;
+        height: calc(100% + 20px);
+    }
+    .services::before {
+        width: calc(100% - 2rem);
+        height: 1px;
+    }
 }
 
 @layer utilities {
