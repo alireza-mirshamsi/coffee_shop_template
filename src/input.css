@@ -38,6 +38,9 @@
 }
 
 @layer components {
+    .submenu {
+        @apply hidden flex flex-col gap-y-3 pr-7 mt-3 text-sm text-zinc-600;
+    }
     .submenu--open {
         @apply flex;
     }
@@ -153,5 +156,9 @@
 @layer utilities {
     .flex-center {
         @apply flex items-center justify-center
+    }
+    .ltr-text {
+        direction: ltr;
+        text-align: left;
     }
 }
